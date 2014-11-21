@@ -72,20 +72,20 @@ namespace BrioStroy
         private void RenderUser(User user, string ReturnUrl)
         {
             if (user != null)
+            {
+                if (Url.IsLocalUrl(ReturnUrl))
                 {
-                    if (Url.IsLocalUrl(ReturnUrl))
-                    {
-                        Redirect(ReturnUrl);
-                    }
-                    else
-                    {
-                        RedirectToAction("Index", "Home");
-                    }
+                    Redirect(ReturnUrl);
                 }
                 else
                 {
-                    ModelState.AddModelError("", "Имя пользователя или пароль является не корректным.");
+                    RedirectToAction("Index", "Home");
                 }
+            }
+            else
+            {
+                ModelState.AddModelError("", "Имя пользователя или пароль является не корректным.");
+            }
         }
 
         /// <summary>  
