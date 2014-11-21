@@ -9,7 +9,7 @@ using System.Web.Mvc;
 
 namespace BrioStroy
 {
-    public class DocumentController : Controller
+    public class DocumentController : Controller, BrioStroy.Controllers.IDocumentEditor
     {
         private readonly IDocumentRepository documentRepository;
         private readonly IProductRepository productRepository;
