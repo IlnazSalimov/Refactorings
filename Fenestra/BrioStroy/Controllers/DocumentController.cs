@@ -12,6 +12,12 @@ namespace BrioStroy
     public class DocumentController : Controller, BrioStroy.Controllers.IDocumentEditor
     {
         private readonly IDocumentRepository documentRepository;
+
+        public IDocumentRepository DocumentRepository
+        {
+            get { return documentRepository; }
+        } 
+
         private readonly IProductRepository productRepository;
         private string priceUploadDirectory = "//Files//Documents//";
         public DocumentController(IDocumentRepository _documentRepository, IProductRepository _productRepository)
