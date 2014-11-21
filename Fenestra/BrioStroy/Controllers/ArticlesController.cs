@@ -40,13 +40,19 @@ namespace BrioStroy
         public ActionResult Edit(int articleId)
         {
             Article article = articleRepository.GetById(articleId);
+            EditArticle addingArticle = GetArticle(article);
+            return View(addingArticle);
+        }
+
+        private static EditArticle GetArticle(Article article)
+        {
             EditArticle addArticle = new EditArticle
             {
                 ID = article.ID,
                 Title = article.Title,
                 Text = article.Text
             };
-            return View(addArticle);
+            return addArticle;
         }
 
         [Authorize(Roles = "Admin")]
