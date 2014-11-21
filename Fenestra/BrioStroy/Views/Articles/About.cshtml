@@ -219,63 +219,23 @@
                 currentBlock = $(".block_ins.current"),
                 currentBlockIndex = blocksCollection.index(currentBlock);
 
-            var isFirstElement = currentBlockIndex == 0;
-            var isLastElement = currentBlockIndex == blocksCollection.length - 1;
-            if (showingBlockIndex != -1 && showingBlockIndex > currentBlockIndex && !isLastElement) {
+            if (showingBlockIndex != -1 && showingBlockIndex > currentBlockIndex && !isLastElement()) {
                 var showingBlock = showingBlockIndex === undefined ? currentBlock.next() : blocksCollection.eq(showingBlockIndex);
 
                 currentBlock.toggle("drop", { direction: (isRemove !== undefined && isRemove ? "right" : "up") }, duration, function () {
                     currentBlock.removeClass("current");
-                    if (showingBlock.hasClass("partner")) {
-                        $(".bottom_arrows_container").hide();
-                        if ($(window).height() >= 1000) {
-                            $(".page_logo").css("background-image", "url('../Content/images/partners.png')");
-                            $(".page_logo_container").css("display", "inherit");
-                        }
-                        else {
-                            $(".page_logo_container").hide();
-                        }
-                    }
-                    else {
-                        $(".bottom_arrows_container").show();
-                        if ($(window).height() >= 751) {
-                            $(".page_logo").css("background-image", "url('../Content/images/about_company.png')");
-                            $(".page_logo_container").show();
-                        }
-                        else {
-                            $(".page_logo_container").hide();
-                        }
-                    }
+                    showOrHideLogo();
                     showingBlock.addClass("current").toggle("drop", { direction: "down" }, duration, function () {
                         onComplete(blocksCollection.index(showingBlock));
                     });
                 });
             }
-            else if (showingBlockIndex != -1 && showingBlockIndex < currentBlockIndex && !isFirstElement) {
+            else if (showingBlockIndex != -1 && showingBlockIndex < currentBlockIndex && !isFirstElement()) {
                 var showingBlock = showingBlockIndex === undefined ? currentBlock.prev() : blocksCollection.eq(showingBlockIndex);
 
                 currentBlock.toggle("drop", { direction: (isRemove !== undefined && isRemove ? "right" : "down") }, duration, function () {
                     currentBlock.removeClass("current");
-                    if (showingBlock.hasClass("partner")) {
-                        $(".bottom_arrows_container").hide();
-                        if ($(window).height() >= 1000) {
-                            $(".page_logo").css("background-image","url('../Content/images/partners.png')");
-                            $(".page_logo_container").css("display", "inherit");
-                        }
-                        else {
-                            $(".page_logo_container").hide();
-                        }
-                    }
-                    else {
-                        $(".bottom_arrows_container").show();
-                        if ($(window).height() >= 751) {
-                            $(".page_logo").css("background-image", "url('../Content/images/about_company.png')");
-                            $(".page_logo_container").show();
-                        }
-                        else {
-                            $(".page_logo_container").hide();
-                        }
-                    }
+                    showOrHideLogo();
                     showingBlock.addClass("current").toggle("drop", { direction: "up" }, duration, function () {
                         onComplete(blocksCollection.index(showingBlock));
                     });
@@ -283,6 +243,37 @@
             }
             else {
                 onComplete();
+            }
+        }
+
+        function isLastElement(){
+            return currentBlockIndex == blocksCollection.length - 1;
+        }
+
+        function isFirstElement() {
+            return currentBlockIndex == 0;
+        }
+
+        function showOrHideLogo() {
+            if (showingBlock.hasClass("partner")) {
+                $(".bottom_arrows_container").hide();
+                if ($(window).height() >= 1000) {
+                    $(".page_logo").css("background-image", "url('../Content/images/partners.png')");
+                    $(".page_logo_container").css("display", "inherit");
+                }
+                else {
+                    $(".page_logo_container").hide();
+                }
+            }
+            else {
+                $(".bottom_arrows_container").show();
+                if ($(window).height() >= 751) {
+                    $(".page_logo").css("background-image", "url('../Content/images/about_company.png')");
+                    $(".page_logo_container").show();
+                }
+                else {
+                    $(".page_logo_container").hide();
+                }
             }
         }
     })();
