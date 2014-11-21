@@ -63,24 +63,29 @@ namespace BrioStroy
             {
                 var user = _brioContext.Auth.Login(model.Email, model.Password, model.RememberMe);
 
-                if (user != null)
+                RenderUser(user, ReturnUrl);
+            }
+
+            return View(model);
+        }
+
+        private void RenderUser(User user, string ReturnUrl)
+        {
+            if (user != null)
                 {
                     if (Url.IsLocalUrl(ReturnUrl))
                     {
-                        return Redirect(ReturnUrl);
+                        Redirect(ReturnUrl);
                     }
                     else
                     {
-                        return RedirectToAction("Index", "Home");
+                        RedirectToAction("Index", "Home");
                     }
                 }
                 else
                 {
                     ModelState.AddModelError("", "Имя пользователя или пароль является не корректным.");
                 }
-            }
-
-            return View(model);
         }
 
         /// <summary>  
