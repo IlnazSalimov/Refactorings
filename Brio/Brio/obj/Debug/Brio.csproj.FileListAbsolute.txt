@@ -127,3 +127,28 @@ d:\Книту-Каи\Методы рефакторинга\Refactorings\Brio\Bri
 d:\Книту-Каи\Методы рефакторинга\Refactorings\Brio\Brio\bin\Debug\System.Net.Http.Formatting.xml
 d:\Книту-Каи\Методы рефакторинга\Refactorings\Brio\Brio\obj\Debug\Brio.dll
 d:\Книту-Каи\Методы рефакторинга\Refactorings\Brio\Brio\obj\Debug\Brio.pdb
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Brio\Brio\bin\Debug\Brio.dll.config
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Brio\Brio\bin\Debug\Brio.dll
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Brio\Brio\bin\Debug\Brio.pdb
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Brio\Brio\bin\Debug\EntityFramework.dll
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Brio\Brio\bin\Debug\EntityFramework.SqlServer.dll
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Brio\Brio\bin\Debug\Microsoft.Web.Infrastructure.dll
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Brio\Brio\bin\Debug\Ninject.dll
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Brio\Brio\bin\Debug\Ninject.Web.Common.dll
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Brio\Brio\bin\Debug\Ninject.Web.Mvc.dll
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Brio\Brio\bin\Debug\System.Web.Http.dll
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Brio\Brio\bin\Debug\System.Web.Http.WebHost.dll
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Brio\Brio\bin\Debug\WebActivatorEx.dll
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Brio\Brio\bin\Debug\System.Net.Http.Formatting.dll
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Brio\Brio\bin\Debug\EntityFramework.xml
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Brio\Brio\bin\Debug\EntityFramework.SqlServer.xml
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Brio\Brio\bin\Debug\Microsoft.Web.Infrastructure.xml
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Brio\Brio\bin\Debug\Ninject.xml
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Brio\Brio\bin\Debug\Ninject.Web.Common.xml
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Brio\Brio\bin\Debug\Ninject.Web.Mvc.xml
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Brio\Brio\bin\Debug\System.Web.Http.xml
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Brio\Brio\bin\Debug\System.Web.Http.WebHost.xml
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Brio\Brio\bin\Debug\System.Net.Http.Formatting.xml
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Brio\Brio\obj\Debug\Brio.dll
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Brio\Brio\obj\Debug\Brio.pdb
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Brio\Brio\obj\Debug\Brio.csprojResolveAssemblyReference.cache

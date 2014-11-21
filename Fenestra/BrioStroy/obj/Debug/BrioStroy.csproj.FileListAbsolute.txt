@@ -160,3 +160,43 @@ d:\Книту-Каи\Методы рефакторинга\Refactorings\Fenestra
 d:\Книту-Каи\Методы рефакторинга\Refactorings\Fenestra\BrioStroy\obj\Debug\BrioStroy.csprojResolveAssemblyReference.cache
 d:\Книту-Каи\Методы рефакторинга\Refactorings\Fenestra\BrioStroy\obj\Debug\BrioStroy.dll
 d:\Книту-Каи\Методы рефакторинга\Refactorings\Fenestra\BrioStroy\obj\Debug\BrioStroy.pdb
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\bin\BrioStroy.dll
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\bin\BrioStroy.pdb
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\bin\Brio.dll
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\bin\EntityFramework.dll
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\bin\EntityFramework.SqlServer.dll
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\bin\Microsoft.Web.Infrastructure.dll
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\bin\Newtonsoft.Json.dll
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\bin\Ninject.dll
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\bin\Ninject.Web.Common.dll
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\bin\Ninject.Web.Mvc.dll
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\bin\System.Net.Http.Formatting.dll
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\bin\System.Web.Helpers.dll
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\bin\System.Web.Http.dll
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\bin\System.Web.Http.WebHost.dll
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\bin\System.Web.Mvc.dll
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\bin\System.Web.Razor.dll
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\bin\System.Web.WebPages.Deployment.dll
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\bin\System.Web.WebPages.dll
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\bin\System.Web.WebPages.Razor.dll
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\bin\WebActivatorEx.dll
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\bin\Brio.pdb
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\bin\EntityFramework.xml
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\bin\EntityFramework.SqlServer.xml
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\bin\Ninject.xml
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\bin\Ninject.Web.Common.xml
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\bin\Ninject.Web.Mvc.xml
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\bin\Newtonsoft.Json.xml
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\bin\System.Net.Http.Formatting.xml
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\bin\System.Web.Helpers.xml
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\bin\System.Web.Http.xml
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\bin\System.Web.Http.WebHost.xml
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\bin\System.Web.Mvc.xml
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\bin\System.Web.Razor.xml
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\bin\System.Web.WebPages.xml
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\bin\System.Web.WebPages.Deployment.xml
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\bin\System.Web.WebPages.Razor.xml
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\obj\Debug\BrioStroy.csprojResolveAssemblyReference.cache
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\obj\Debug\BrioStroy.dll
+d:\KnituKai\MethodsOfRefactorings\Refactorings\Fenestra\BrioStroy\obj\Debug\BrioStroy.pdb

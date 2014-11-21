@@ -23,5 +23,10 @@ namespace BrioStroy
             return controller == currentController && action == currentAction ?
                 cssClass : String.Empty;
         }
+
+        public static string GetHello()
+        {
+            return "Hello, World!";
+        }
     }
 }
