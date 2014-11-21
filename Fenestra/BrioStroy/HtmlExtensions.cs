@@ -8,7 +8,7 @@ namespace BrioStroy
 {
     public static class HtmlExtensions
     {
-        public static string IsSelected(this HtmlHelper html, string controller = null, string action = null, bool isNeededParameter = false)
+        public static string IsSelected(this HtmlHelper html, string controller = null, string action = null)
         {
             string cssClass = "active";
             string currentAction = (string)html.ViewContext.RouteData.Values["action"];
