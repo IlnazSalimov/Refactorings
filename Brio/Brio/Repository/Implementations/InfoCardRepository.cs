@@ -27,6 +27,13 @@ namespace Brio
             return infoCardRepository.GetById(id);
         }
 
+        public InfoCard GetUserInfoCard(int userId)
+        {
+            if (userId == 0)
+                return null;
+            return infoCardRepository.GetAll().Where(i => i.UserId == userId).FirstOrDefault();
+        }
+
         public void Insert(InfoCard model)
         {
             if (model == null)

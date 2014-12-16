@@ -14,6 +14,7 @@ namespace Brio
     {
         IQueryable<InfoCard> GetAll();
         InfoCard GetById(int id);
+        InfoCard GetUserInfoCard(int userId);
         void Insert(InfoCard model);
         void Update(InfoCard model);
         void Delete(InfoCard model);

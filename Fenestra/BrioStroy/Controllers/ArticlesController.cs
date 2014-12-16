@@ -16,15 +16,21 @@ namespace BrioStroy
         private readonly IArticleRepository articleRepository;
 
         /// <summary>
+        /// Предоставляет доступ к хранилищу данных о карточках сотрудников
+        /// </summary>
+        private readonly IInfoCardRepository infoCardRepository;
+
+        /// <summary>
         /// Экземпляр класса InvestContext, предоставляет доступ к системным данным приложения.
         /// Может быть использован для доступа к текущему авторизованному пользователю
         /// </summary>
         private readonly IBrioContext brioContext;
 
-        public ArticlesController(IArticleRepository _articleRepository, IBrioContext _brioContext)
+        public ArticlesController(IArticleRepository _articleRepository, IBrioContext _brioContext, IInfoCardRepository _infoCardRepository)
         {
             this.articleRepository = _articleRepository;
             this.brioContext = _brioContext;
+            this.infoCardRepository = _infoCardRepository;
         }
         public ActionResult Index()
         {
@@ -33,6 +39,8 @@ namespace BrioStroy
 
         public ActionResult About()
         {
+            int companyId = infoCardRepository.GetUserInfoCard(brioContext.CurrentUser.ID).CompanyId;
+
             return View(articleRepository.GetByPage(PagesEnum.About, AppSettings.CurrentCompany));
         }
 
