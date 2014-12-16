@@ -28,4 +28,28 @@ namespace BrioStroy
             return "Hello, World!";
         }
     }
+
+    public class Account
+    {
+        // ...
+        double SchedulePayment()
+        {
+            DateTime paymentDate = GetNearFirstDate(previousDate);
+
+            // Issue a payment using paymentDate.
+            // ...
+        }
+
+        //TODO: Foreign method. Should be on DateTime.
+        public static DateTime GetNearFirstDate(DateTime date)
+        {
+            if (date.Day == 1)
+                return date;
+
+            DateTime nextDate = date.AddMonths(1);
+
+            return new DateTime(nextDate.Year, nextDate.Month, 1);
+        }
+    }
+
 }
