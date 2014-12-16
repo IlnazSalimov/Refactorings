@@ -30,6 +30,13 @@ namespace Brio
         [Inject]
         public IUserRepository _userRepository { get; set; }
 
+        public CookieProcessing _CookieProcessing { get; set; }
+
+        public CustomAuthentication()
+        {
+            this._CookieProcessing = new CookieProcessing();
+        }
+
         #region IAuthentication Members
 
         /// <summary>
@@ -45,7 +52,7 @@ namespace Brio
             User retUser = _userRepository.Login(userName, Password);
             if (retUser != null)
             {
-                CreateCookie(userName, isPersistent);
+                _CookieProcessing.CreateCookie(userName, cookieName, isPersistent);
             }
             return retUser;
         }
@@ -55,39 +62,12 @@ namespace Brio
             User retUser = _userRepository.GetAll().FirstOrDefault(p => string.Compare(p.Email, email, true) == 0);
             if (retUser != null)
             {
-                CreateCookie(email);
+                _CookieProcessing.CreateCookie(email, cookieName);
             }
             return retUser;
         }
 
-        /// <summary>
-        /// Создает аутентификационные данные в Cookie
-        /// </summary>
-        /// <param name="userName">Имя пользователя, связанное с билетом. </param>
-        /// <param name="isPersistent">true , если билет будет храниться с постоянным файлом Cookie (сохраняемым между сеансами браузера);
-        /// в противном случае — false. Если билет хранится в URL-адресе, это значение игнорируется.</param>
-        private void CreateCookie(string userName, bool isPersistent = false)
-        {
-            var ticket = new FormsAuthenticationTicket(
-                  1,
-                  userName,
-                  DateTime.Now,
-                  DateTime.Now.Add(FormsAuthentication.Timeout),
-                  isPersistent,
-                  string.Empty,
-                  FormsAuthentication.FormsCookiePath);
-
-            // Encrypt the ticket.
-            var encTicket = FormsAuthentication.Encrypt(ticket);
-
-            // Create the cookie.
-            var AuthCookie = new HttpCookie(cookieName)
-            {
-                Value = encTicket,
-                Expires = DateTime.Now.Add(FormsAuthentication.Timeout)
-            };
-            HttpContext.Response.Cookies.Set(AuthCookie);
-        }
+        
 
         /// <summary>
         /// Производит очистку  аутентификационных данных текущего ползователя из Cookie

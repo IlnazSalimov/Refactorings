@@ -73,6 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BrioContext\BrioContext.cs" />
+    <Compile Include="BrioContext\CookieProcessing.cs" />
     <Compile Include="BrioContext\CustomAuthentication.cs" />
     <Compile Include="BrioContext\HttpModules\AuthHttpModule.cs" />
     <Compile Include="BrioContext\Interfaces\IAuthentication.cs" />
