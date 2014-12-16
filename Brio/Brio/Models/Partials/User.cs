@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 
 namespace Brio.Models
 {
@@ -30,6 +31,15 @@ namespace Brio.Models
         public int ID
         {
             get { return this.Id; }
+        }
+
+        public int CompanyId
+        {
+            get 
+            {
+                IInfoCardRepository infoCardRepository = (IInfoCardRepository)DependencyResolver.Current.GetService(typeof(IInfoCardRepository));
+                return infoCardRepository.GetUserInfoCard(this.ID).CompanyId; 
+            }
         }
     }
 }

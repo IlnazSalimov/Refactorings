@@ -39,7 +39,7 @@ namespace BrioStroy
 
         public ActionResult About()
         {
-            int companyId = infoCardRepository.GetUserInfoCard(brioContext.CurrentUser.ID).CompanyId;
+            int companyId = brioContext.CurrentUser.CompanyId;
 
             return View(articleRepository.GetByPage(PagesEnum.About, AppSettings.CurrentCompany));
         }
