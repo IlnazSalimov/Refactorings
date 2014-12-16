@@ -34,19 +34,32 @@ namespace BrioStroy
         // ...
         double SchedulePayment()
         {
-            DateTime paymentDate = GetNearFirstDate(previousDate);
+            DateTime paymentDate = new MfDateTimeWrap(previousDate).GetNearFirstDate();
 
             // Issue a payment using paymentDate.
             // ...
         }
+    }
 
-        //TODO: Foreign method. Should be on DateTime.
-        public static DateTime GetNearFirstDate(DateTime date)
+    public class MfDateTimeWrap
+    {
+        private DateTime date;
+
+        public MfDateTimeWrap()
+            : this(new DateTime())
+        { }
+
+        public MfDateTimeWrap(DateTime date)
         {
-            if (date.Day == 1)
-                return date;
+            this.date = date;
+        }
 
-            DateTime nextDate = date.AddMonths(1);
+        public DateTime GetNearFirstDate()
+        {
+            if (this.date.Day == 1)
+                return this.date;
+
+            DateTime nextDate = this.date.AddMonths(1);
 
             return new DateTime(nextDate.Year, nextDate.Month, 1);
         }
