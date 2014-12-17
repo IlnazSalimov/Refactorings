@@ -129,6 +129,7 @@
     <Compile Include="Models\Partials\Company.cs" />
     <Compile Include="Models\Partials\Division.cs" />
     <Compile Include="Models\Partials\Document.cs" />
+    <Compile Include="Models\Partials\Employee.cs" />
     <Compile Include="Models\Partials\Entities.cs" />
     <Compile Include="Models\Partials\Feedback.cs" />
     <Compile Include="Models\Partials\InfoCard.cs" />
