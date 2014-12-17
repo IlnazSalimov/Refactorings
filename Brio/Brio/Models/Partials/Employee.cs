@@ -19,17 +19,7 @@ namespace Brio.Models
         public int bonus;
         public int payAmount()
         {
-            switch (getTypeCode())
-            {
-                case EmployeeType.ENGINEER:
-                    return monthlySalary;
-                case EmployeeType.SALESMAN:
-                    return monthlySalary + commission;
-                case EmployeeType.MANAGER:
-                    return monthlySalary + bonus;
-                default:
-                    throw new Exception("Incorrect Employee Code");
-            }
+            return type.payAmount(this);
         }
     }
 
@@ -54,12 +44,19 @@ namespace Brio.Models
                     throw new Exception("dsf");
             }
         }
+
+        abstract public int payAmount(Employee employee);
     }
     class Engineer : EmployeeType
     {
         public int getTypeCode()
         {
             return EmployeeType.ENGINEER;
+        }
+
+        public int payAmount(Employee employee)
+        {
+            return employee.monthlySalary;
         }
     }
     class Salesman : EmployeeType
@@ -68,12 +65,22 @@ namespace Brio.Models
         {
             return EmployeeType.SALESMAN;
         }
+
+        public int payAmount(Employee employee)
+        {
+            return employee.monthlySalary + employee.commission;
+        }
     }
     class Manager : EmployeeType
     {
         public int getTypeCode()
         {
             return EmployeeType.MANAGER;
+        }
+
+        public int payAmount(Employee employee)
+        {
+            return employee.monthlySalary + employee.bonus;
         }
     }
 }
